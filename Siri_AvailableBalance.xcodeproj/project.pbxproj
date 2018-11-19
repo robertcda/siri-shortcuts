@@ -14,6 +14,16 @@
 		1C7C306A21A3061E00E3045F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C306821A3061E00E3045F /* LaunchScreen.storyboard */; };
 		1C7C307521A3061E00E3045F /* Siri_AvailableBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C307421A3061E00E3045F /* Siri_AvailableBalanceTests.swift */; };
 		1C7C308021A3061E00E3045F /* Siri_AvailableBalanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C307F21A3061E00E3045F /* Siri_AvailableBalanceUITests.swift */; };
+		1C7C30BA21A3153200E3045F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C30B921A3153200E3045F /* IntentHandler.swift */; };
+		1C7C30C121A3153200E3045F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7C309D21A314EB00E3045F /* IntentsUI.framework */; };
+		1C7C30C421A3153200E3045F /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C30C321A3153200E3045F /* IntentViewController.swift */; };
+		1C7C30C721A3153200E3045F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7C30C521A3153200E3045F /* MainInterface.storyboard */; };
+		1C7C30CB21A3153200E3045F /* BalanceExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C7C30C021A3153200E3045F /* BalanceExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C7C30CE21A3153200E3045F /* BalanceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C7C30B721A3153200E3045F /* BalanceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C7C30D621A315AD00E3045F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C30D521A315AD00E3045F /* Intents.intentdefinition */; };
+		1C7C30D721A316BA00E3045F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C30D521A315AD00E3045F /* Intents.intentdefinition */; };
+		1C7C30D821A316BA00E3045F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C30D521A315AD00E3045F /* Intents.intentdefinition */; };
+		1C7C30DA21A31FFF00E3045F /* AvailableBalanceIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C30D921A31FFE00E3045F /* AvailableBalanceIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +41,36 @@
 			remoteGlobalIDString = 1C7C305B21A3061D00E3045F;
 			remoteInfo = Siri_AvailableBalance;
 		};
+		1C7C30C921A3153200E3045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C7C305421A3061D00E3045F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C7C30BF21A3153200E3045F;
+			remoteInfo = BalanceExtensionUI;
+		};
+		1C7C30CC21A3153200E3045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C7C305421A3061D00E3045F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C7C30B621A3153200E3045F;
+			remoteInfo = BalanceExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C7C30B221A314EB00E3045F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C7C30CB21A3153200E3045F /* BalanceExtensionUI.appex in Embed App Extensions */,
+				1C7C30CE21A3153200E3045F /* BalanceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C7C305C21A3061D00E3045F /* Siri_AvailableBalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siri_AvailableBalance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +86,17 @@
 		1C7C307B21A3061E00E3045F /* Siri_AvailableBalanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Siri_AvailableBalanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C7C307F21A3061E00E3045F /* Siri_AvailableBalanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Siri_AvailableBalanceUITests.swift; sourceTree = "<group>"; };
 		1C7C308121A3061E00E3045F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7C308D21A3064500E3045F /* Siri_AvailableBalance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Siri_AvailableBalance.entitlements; sourceTree = "<group>"; };
+		1C7C309D21A314EB00E3045F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		1C7C30B721A3153200E3045F /* BalanceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BalanceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7C30B921A3153200E3045F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		1C7C30BB21A3153200E3045F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7C30C021A3153200E3045F /* BalanceExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BalanceExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7C30C321A3153200E3045F /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		1C7C30C621A3153200E3045F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1C7C30C821A3153200E3045F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7C30D521A315AD00E3045F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		1C7C30D921A31FFE00E3045F /* AvailableBalanceIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableBalanceIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +121,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C7C30B421A3153200E3045F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7C30BD21A3153200E3045F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C30C121A3153200E3045F /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,9 @@
 				1C7C305E21A3061D00E3045F /* Siri_AvailableBalance */,
 				1C7C307321A3061E00E3045F /* Siri_AvailableBalanceTests */,
 				1C7C307E21A3061E00E3045F /* Siri_AvailableBalanceUITests */,
+				1C7C30B821A3153200E3045F /* BalanceExtension */,
+				1C7C30C221A3153200E3045F /* BalanceExtensionUI */,
+				1C7C309C21A314EB00E3045F /* Frameworks */,
 				1C7C305D21A3061D00E3045F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +158,8 @@
 				1C7C305C21A3061D00E3045F /* Siri_AvailableBalance.app */,
 				1C7C307021A3061E00E3045F /* Siri_AvailableBalanceTests.xctest */,
 				1C7C307B21A3061E00E3045F /* Siri_AvailableBalanceUITests.xctest */,
+				1C7C30B721A3153200E3045F /* BalanceExtension.appex */,
+				1C7C30C021A3153200E3045F /* BalanceExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +167,14 @@
 		1C7C305E21A3061D00E3045F /* Siri_AvailableBalance */ = {
 			isa = PBXGroup;
 			children = (
+				1C7C308D21A3064500E3045F /* Siri_AvailableBalance.entitlements */,
 				1C7C305F21A3061D00E3045F /* AppDelegate.swift */,
 				1C7C306121A3061D00E3045F /* ViewController.swift */,
 				1C7C306321A3061D00E3045F /* Main.storyboard */,
 				1C7C306621A3061E00E3045F /* Assets.xcassets */,
 				1C7C306821A3061E00E3045F /* LaunchScreen.storyboard */,
 				1C7C306B21A3061E00E3045F /* Info.plist */,
+				1C7C30D521A315AD00E3045F /* Intents.intentdefinition */,
 			);
 			path = Siri_AvailableBalance;
 			sourceTree = "<group>";
@@ -125,6 +197,34 @@
 			path = Siri_AvailableBalanceUITests;
 			sourceTree = "<group>";
 		};
+		1C7C309C21A314EB00E3045F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C309D21A314EB00E3045F /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C7C30B821A3153200E3045F /* BalanceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C30B921A3153200E3045F /* IntentHandler.swift */,
+				1C7C30BB21A3153200E3045F /* Info.plist */,
+				1C7C30D921A31FFE00E3045F /* AvailableBalanceIntentHandler.swift */,
+			);
+			path = BalanceExtension;
+			sourceTree = "<group>";
+		};
+		1C7C30C221A3153200E3045F /* BalanceExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				1C7C30C321A3153200E3045F /* IntentViewController.swift */,
+				1C7C30C521A3153200E3045F /* MainInterface.storyboard */,
+				1C7C30C821A3153200E3045F /* Info.plist */,
+			);
+			path = BalanceExtensionUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +235,13 @@
 				1C7C305821A3061D00E3045F /* Sources */,
 				1C7C305921A3061D00E3045F /* Frameworks */,
 				1C7C305A21A3061D00E3045F /* Resources */,
+				1C7C30B221A314EB00E3045F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1C7C30CA21A3153200E3045F /* PBXTargetDependency */,
+				1C7C30CD21A3153200E3045F /* PBXTargetDependency */,
 			);
 			name = Siri_AvailableBalance;
 			productName = Siri_AvailableBalance;
@@ -181,6 +284,40 @@
 			productReference = 1C7C307B21A3061E00E3045F /* Siri_AvailableBalanceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1C7C30B621A3153200E3045F /* BalanceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7C30D221A3153200E3045F /* Build configuration list for PBXNativeTarget "BalanceExtension" */;
+			buildPhases = (
+				1C7C30B321A3153200E3045F /* Sources */,
+				1C7C30B421A3153200E3045F /* Frameworks */,
+				1C7C30B521A3153200E3045F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalanceExtension;
+			productName = BalanceExtension;
+			productReference = 1C7C30B721A3153200E3045F /* BalanceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1C7C30BF21A3153200E3045F /* BalanceExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7C30CF21A3153200E3045F /* Build configuration list for PBXNativeTarget "BalanceExtensionUI" */;
+			buildPhases = (
+				1C7C30BC21A3153200E3045F /* Sources */,
+				1C7C30BD21A3153200E3045F /* Frameworks */,
+				1C7C30BE21A3153200E3045F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalanceExtensionUI;
+			productName = BalanceExtensionUI;
+			productReference = 1C7C30C021A3153200E3045F /* BalanceExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +330,11 @@
 				TargetAttributes = {
 					1C7C305B21A3061D00E3045F = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					1C7C306F21A3061E00E3045F = {
 						CreatedOnToolsVersion = 10.0;
@@ -201,6 +343,12 @@
 					1C7C307A21A3061E00E3045F = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 1C7C305B21A3061D00E3045F;
+					};
+					1C7C30B621A3153200E3045F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1C7C30BF21A3153200E3045F = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
@@ -220,6 +368,8 @@
 				1C7C305B21A3061D00E3045F /* Siri_AvailableBalance */,
 				1C7C306F21A3061E00E3045F /* Siri_AvailableBalanceTests */,
 				1C7C307A21A3061E00E3045F /* Siri_AvailableBalanceUITests */,
+				1C7C30B621A3153200E3045F /* BalanceExtension */,
+				1C7C30BF21A3153200E3045F /* BalanceExtensionUI */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +399,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C7C30B521A3153200E3045F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7C30BE21A3153200E3045F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C30C721A3153200E3045F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7C30D621A315AD00E3045F /* Intents.intentdefinition in Sources */,
 				1C7C306221A3061D00E3045F /* ViewController.swift in Sources */,
 				1C7C306021A3061D00E3045F /* AppDelegate.swift in Sources */,
 			);
@@ -277,6 +443,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C7C30B321A3153200E3045F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C30D721A316BA00E3045F /* Intents.intentdefinition in Sources */,
+				1C7C30DA21A31FFF00E3045F /* AvailableBalanceIntentHandler.swift in Sources */,
+				1C7C30BA21A3153200E3045F /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7C30BC21A3153200E3045F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C30D821A316BA00E3045F /* Intents.intentdefinition in Sources */,
+				1C7C30C421A3153200E3045F /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +474,16 @@
 			isa = PBXTargetDependency;
 			target = 1C7C305B21A3061D00E3045F /* Siri_AvailableBalance */;
 			targetProxy = 1C7C307C21A3061E00E3045F /* PBXContainerItemProxy */;
+		};
+		1C7C30CA21A3153200E3045F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C7C30BF21A3153200E3045F /* BalanceExtensionUI */;
+			targetProxy = 1C7C30C921A3153200E3045F /* PBXContainerItemProxy */;
+		};
+		1C7C30CD21A3153200E3045F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C7C30B621A3153200E3045F /* BalanceExtension */;
+			targetProxy = 1C7C30CC21A3153200E3045F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +502,14 @@
 				1C7C306921A3061E00E3045F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C7C30C521A3153200E3045F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C7C30C621A3153200E3045F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,8 +634,11 @@
 		1C7C308521A3061E00E3045F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Siri_AvailableBalance/Siri_AvailableBalance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB8VD6W537;
 				INFOPLIST_FILE = Siri_AvailableBalance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,8 +654,11 @@
 		1C7C308621A3061E00E3045F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Siri_AvailableBalance/Siri_AvailableBalance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB8VD6W537;
 				INFOPLIST_FILE = Siri_AvailableBalance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,6 +749,82 @@
 			};
 			name = Release;
 		};
+		1C7C30D021A3153200E3045F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB8VD6W537;
+				INFOPLIST_FILE = BalanceExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ing.Siri-AvailableBalance.BalanceExtensionUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C7C30D121A3153200E3045F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB8VD6W537;
+				INFOPLIST_FILE = BalanceExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ing.Siri-AvailableBalance.BalanceExtensionUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C7C30D321A3153200E3045F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB8VD6W537;
+				INFOPLIST_FILE = BalanceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ing.Siri-AvailableBalance.BalanceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C7C30D421A3153200E3045F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PB8VD6W537;
+				INFOPLIST_FILE = BalanceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ing.Siri-AvailableBalance.BalanceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +860,24 @@
 			buildConfigurations = (
 				1C7C308B21A3061E00E3045F /* Debug */,
 				1C7C308C21A3061E00E3045F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7C30CF21A3153200E3045F /* Build configuration list for PBXNativeTarget "BalanceExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7C30D021A3153200E3045F /* Debug */,
+				1C7C30D121A3153200E3045F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7C30D221A3153200E3045F /* Build configuration list for PBXNativeTarget "BalanceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7C30D321A3153200E3045F /* Debug */,
+				1C7C30D421A3153200E3045F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
