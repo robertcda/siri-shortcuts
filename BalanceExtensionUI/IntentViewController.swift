@@ -17,6 +17,13 @@ import IntentsUI
 
 class IntentViewController: UIViewController, INUIHostedViewControlling {
     
+    @IBOutlet weak var label: UILabel!
+    @IBAction func buttonClicked(_ sender: Any) {
+        self.dismiss(animated: true) {
+            //Do nothing
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,13 +32,29 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     // MARK: - INUIHostedViewControlling
     
     // Prepare your view controller for the interaction to handle.
-    func configureView(for parameters: Set<INParameter>, of interaction: INInteraction, interactiveBehavior: INUIInteractiveBehavior, context: INUIHostedViewContext, completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
+    func configureView(for parameters: Set<INParameter>,
+                       of interaction: INInteraction,
+                       interactiveBehavior: INUIInteractiveBehavior,
+                       context: INUIHostedViewContext,
+                       completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
         // Do configuration here, including preparing views and calculating a desired size for presentation.
+        switch interaction.intentResponse{
+        case let balanceRespone as AvailableBalanceIntentResponse:
+            var amount = 0
+            if let uValue = balanceRespone.accountBalanceProperty{
+                amount = Int(uValue) ?? 0
+            }
+            self.label.text = "Your account's balance is " + "\(amount)"
+        default:
+            self.label.text = "UnRecognized"
+            
+        }
         completion(true, parameters, self.desiredSize)
     }
     
     var desiredSize: CGSize {
-        return self.extensionContext!.hostedViewMaximumAllowedSize
+//        return self.extensionContext!.hostedViewMaximumAllowedSize
+        return CGSize(width: 300, height: 200)
     }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 class ViewController: UIViewController {
 
@@ -24,8 +25,19 @@ class ViewController: UIViewController {
             //TODO: create and donate an Intent
         }
         
+        self.donateViewBalanceIntent()
     }
     
+    private func donateViewBalanceIntent(){
+        let intent = AvailableBalanceIntent()
+        intent.suggestedInvocationPhrase = "Whats my balance?"
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        interaction.donate { (error) in
+            print("ViewController:DonateViewBalanceIntent: \(error)")
+        }
+        
+    }
     
 }
 
