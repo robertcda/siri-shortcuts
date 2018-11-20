@@ -23,6 +23,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>AvailableBalanceIntent</string>
+		<string>TransferMoneyIntent</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

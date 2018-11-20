@@ -9,7 +9,7 @@
 import Foundation
 class AvailableBalanceIntentHandler: NSObject, AvailableBalanceIntentHandling{
     func handle(intent: AvailableBalanceIntent, completion: @escaping (AvailableBalanceIntentResponse) -> Void) {
-        completion(AvailableBalanceIntentResponse.success(accountBalanceProperty: "300"))
+        completion(AvailableBalanceIntentResponse.success(accountBalanceProperty: 300))
 
     }
     func confirm(intent: AvailableBalanceIntent, completion: @escaping (AvailableBalanceIntentResponse) -> Void) {

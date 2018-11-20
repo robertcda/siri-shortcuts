@@ -45,6 +45,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
                 amount = Int(uValue) ?? 0
             }
             self.label.text = "Your account's balance is " + "\(amount)"
+        case let balanceRespone as TransferMoneyIntentResponse:
+            self.label.text = "transfer" + "?"
         default:
             self.label.text = "UnRecognized"
             

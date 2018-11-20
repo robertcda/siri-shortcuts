@@ -28,6 +28,7 @@
 			<array>
 				<string>AvailableBalanceIntent</string>
 				<string>INSendMessageIntent</string>
+				<string>TransferMoneyIntent</string>
 			</array>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>

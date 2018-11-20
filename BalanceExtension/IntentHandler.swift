@@ -26,6 +26,8 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
         switch intent{
         case is AvailableBalanceIntent:
             return AvailableBalanceIntentHandler()
+        case is TransferMoneyIntent:
+            return TransferMoneyIntentHandler()
         default:
             print("default")
         }
